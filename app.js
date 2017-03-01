@@ -20,7 +20,18 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+
+/**
+ * static folder should be changed as follows:
+ * development: '/client/src'
+ * production : '/client/build'
+ * process.env.PORT is truthy for production i.e 80
+ * process.env.PORT is falsey for development i.e undefined
+ */
+var staticDirectory = process.env.PORT ? '/client/build' : '/client/src';
+
+app.use(express.static(path.join(__dirname, staticDirectory)));
+
 
 app.use('/', index);
 app.use('/users', users);
