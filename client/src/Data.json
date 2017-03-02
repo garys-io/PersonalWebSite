@@ -1,5 +1,68 @@
 {
-    "HOME": "This is Home",
-    "PROJECTS": "This is projects",
-    "RESUME": "This is resume"
+    "home": "This is Home",
+    "projects": "This is projects",
+    "resume": {
+        "name": "[Gary] Gurpreet Singh",
+        "addressLine1": "Conestoga College Residence",
+        "addressLine2": "99 Conestoga College Boulevard",
+        "city": "Kitchener, ON",
+        "pinCode": "N2P 2N5",
+        "phone": "(519) 781 - 4970",
+        "email": "gsingh0370@conestogac.on.ca",
+        "website": "GurpreetSingh.codes",
+        "objective": "To obtain a co-op term as a Full Stack developer from May to Aug 2017",
+        "projects": [
+            {
+                "text": "Realtime multtiplayer tic tac toe game using React, Socket.io and Express",
+                "link": ""
+            },
+            {
+                "text": "Cloud based quiz app using Angular2, MongoDB and Express on AWS",
+                "link": ""
+            },
+            {
+                "text": "Data Visulization of exam results using D3 and jQuery",
+                "link": ""
+            }
+        ],
+        "education": [
+            {
+                "program": "Mobile Solution Development (Co op) Program",
+                "timeline": "[2016 - Present]",
+                "qualification": "Ontario College Graduate Certificate",
+                "institute": "Conestoga College Kitchener, Ontario, Canada",
+                "link": ""
+            },
+            {
+                "program": "Electronics and Telecommunication Engineering",
+                "timeline": "[2012 - 2016]",
+                "qualification": "Bachelor of Engineering",
+                "institute": "Army Institute of Technology Pune, India",
+                "link": ""
+            }
+        ],
+        "experience": [
+            {
+                "position": "Front End Developer",
+                "timeline": "[June & July 2016]",
+                "institute": "mCruiseOn, Pune, India",
+                "description": [
+                    "Fleet management application with following features",
+                    "Real time location tracking, management console, user side application in Android, dynamic routes & rides, resources management - drivers / vehicles",
+                    "Contributed to the project by creating a interactive dashboard for creating and modifying vehicles, schedule, routes and stops using Bootstrap Query and Google Maps"
+                ],
+                "url": "http://buseeta.mcruiseon.com"
+            },
+            {
+                "position": "Full Stack Developer",
+                "timeline": "[June & July 2016]",
+                "institute": "Contract",
+                "description": [
+                    "A web portal for buying, test-driving, renting cars using Bootstrap, Google Maps, jQuery, Django",
+                    "Contributing to project by creating ..."
+                ],
+                "url": "http://staging.drive4wheels.com"
+            }
+        ]
+    }
 }

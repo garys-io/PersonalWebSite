@@ -27,10 +27,8 @@ class MainComp extends Component {
         },
         paper: {
             minHeight: '300px',
-            height: '60vh',
             width: '90%',
             margin: '20px 5%',
-            textAlign: 'center',
             display: 'inline-block',
         }
     };
@@ -39,20 +37,20 @@ class MainComp extends Component {
         <Tabs>
 
             <Tab label="HOME" icon={<ActionHome />} >
-                <Paper style={styles.paper} zDepth={2}>
-                    <HomeComp data={this.props.data.HOME} />
+                <Paper style={styles.paper} zDepth={1}>
+                    <HomeComp />
                 </Paper>
             </Tab>
 
             <Tab label="Projects" icon={<DeviceDeveloperMode />} >
-                <Paper style={styles.paper} zDepth={2}>
+                <Paper style={styles.paper} zDepth={1}>
                     <ProjectsComp />
                 </Paper>
             </Tab>
 
             <Tab label="Resume" icon={<ActionDescription />} >
-                <Paper style={styles.paper} zDepth={2}>
-                    <ResumeComp />
+                <Paper style={styles.paper} zDepth={1}>
+                    <ResumeComp data={this.props.data.resume} />
                 </Paper>
             </Tab>
 
