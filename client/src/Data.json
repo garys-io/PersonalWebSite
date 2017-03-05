@@ -1,6 +1,18 @@
 {
-    "home": "This is Home",
-    "projects": "This is projects",
+    "projects": [
+        {
+            "text": "Realtime multiplayer tic tac toe game using React, material UI, Socket.io and Express",
+            "link": ""
+        },
+        {
+            "text": "Data Visualization of exam results using D3, Bootstrap and jQuery",
+            "link": ""
+        },
+        {
+            "text": "Cloud based quiz app using React, MongoDB and Express on AWS and MongoDB Atlas",
+            "link": ""
+        }
+    ],
     "resume": {
         "name": "[Gary] Gurpreet Singh",
         "addressLine1": "Conestoga College Residence",
@@ -13,15 +25,15 @@
         "objective": "To obtain a co-op term as a Full Stack developer from May to Aug 2017",
         "projects": [
             {
-                "text": "Realtime multtiplayer tic tac toe game using React, Socket.io and Express",
+                "text": "Realtime multiplayer tic tac toe game using React, material UI, Socket.io and Express",
                 "link": ""
             },
             {
-                "text": "Cloud based quiz app using Angular2, MongoDB and Express on AWS",
+                "text": "Data Visualization of exam results using D3, Bootstrap and jQuery",
                 "link": ""
             },
             {
-                "text": "Data Visulization of exam results using D3 and jQuery",
+                "text": "Cloud based quiz app using React, MongoDB and Express on AWS and MongoDB Atlas",
                 "link": ""
             }
         ],
@@ -30,15 +42,13 @@
                 "program": "Mobile Solution Development (Co op) Program",
                 "timeline": "[2016 - Present]",
                 "qualification": "Ontario College Graduate Certificate",
-                "institute": "Conestoga College Kitchener, Ontario, Canada",
-                "link": ""
+                "institute": "Conestoga College Kitchener, Ontario, Canada"
             },
             {
                 "program": "Electronics and Telecommunication Engineering",
                 "timeline": "[2012 - 2016]",
                 "qualification": "Bachelor of Engineering",
-                "institute": "Army Institute of Technology Pune, India",
-                "link": ""
+                "institute": "Army Institute of Technology Pune, India"
             }
         ],
         "experience": [
@@ -48,18 +58,17 @@
                 "institute": "mCruiseOn, Pune, India",
                 "description": [
                     "Fleet management application with following features",
-                    "Real time location tracking, management console, user side application in Android, dynamic routes & rides, resources management - drivers / vehicles",
-                    "Contributed to the project by creating a interactive dashboard for creating and modifying vehicles, schedule, routes and stops using Bootstrap Query and Google Maps"
+                    "Real time location tracking, management console, user side application in Android, dynamic routes & rides, resources management - drivers / vehicles.",
+                    "Contributed to the project by creating interactive dashboard for creating and modifying vehicles, schedule, routes and stops using Bootstrap jQuery and Google Maps."
                 ],
                 "url": "http://buseeta.mcruiseon.com"
             },
             {
                 "position": "Full Stack Developer",
                 "timeline": "[June & July 2016]",
-                "institute": "Contract",
+                "institute": "Freelance work",
                 "description": [
-                    "A web portal for buying, test-driving, renting cars using Bootstrap, Google Maps, jQuery, Django",
-                    "Contributing to project by creating ..."
+                    "A web based car portal for A web portal for buying, booking test-drive, renting cars using Bootstrap, Google Maps, jQuery at the front end and python/Django at the backend."
                 ],
                 "url": "http://staging.drive4wheels.com"
             }

@@ -6,14 +6,48 @@ import Paper from 'material-ui/Paper';
 
 class ProjectsComp extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      numCol: 2
+    }
+    this._handleWindowResize = this._handleWindowResize.bind(this);
+  }
+
+  _handleWindowResize() {
+    const w = window,
+          d = document,
+          documentElement = d.documentElement,
+          body = d.getElementsByTagName('body')[0],
+          width = w.innerWidth || documentElement.clientWidth || body.clientWidth;
+
+    if (width < 690) { 
+      this.setState({numCol: 1});
+    } else if (width > 690 && width < 1600) { 
+      this.setState({numCol: 2});
+    } else if (width > 1600) { 
+      this.setState({numCol: 3});
+    }
+  }
+
+  componentDidMount () {
+    this._handleWindowResize();
+    window.addEventListener('resize', this._handleWindowResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._handleWindowResize);
+  }
+
+
   render() {
 
     const styles = {
       paper: {
         float: 'left',
-        margin: '5%',
-        minWidth: '250px',
-        width: '40%'
+        padding: '3%',
+        minWidth: '200px',
+        width: 100/this.state.numCol + '%'
       }
     }
 
@@ -32,7 +66,7 @@ class ProjectsComp extends Component {
 
     const cards = list.map((e, i) => {
       return (
-        <Paper style={styles.paper} zDepth={1} key={i}>
+        <Paper style={styles.paper} zDepth={0} key={i}>
           <Card>
             <CardMedia
               overlay={<CardTitle title="Overlay title" />}
