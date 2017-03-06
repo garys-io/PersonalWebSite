@@ -1,18 +1,4 @@
 {
-    "projects": [
-        {
-            "text": "Realtime multiplayer tic tac toe game using React, material UI, Socket.io and Express",
-            "link": ""
-        },
-        {
-            "text": "Data Visualization of exam results using D3, Bootstrap and jQuery",
-            "link": ""
-        },
-        {
-            "text": "Cloud based quiz app using React, MongoDB and Express on AWS and MongoDB Atlas",
-            "link": ""
-        }
-    ],
     "resume": {
         "name": "[Gary] Gurpreet Singh",
         "addressLine1": "Conestoga College Residence",
@@ -65,8 +51,8 @@
             },
             {
                 "position": "Full Stack Developer",
-                "timeline": "[June & July 2016]",
-                "institute": "Freelance work",
+                "timeline": "[Jan 2017 & Present]",
+                "institute": "Freelance work (drive4wheels)",
                 "description": [
                     "A web based car portal for A web portal for buying, booking test-drive, renting cars using Bootstrap, Google Maps, jQuery at the front end and python/Django at the backend."
                 ],
