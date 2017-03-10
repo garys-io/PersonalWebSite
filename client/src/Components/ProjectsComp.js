@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
+import ActionCode from 'material-ui/svg-icons/action/code';
+import AvWeb from 'material-ui/svg-icons/av/web'
+
 
 import res_vis_2 from '../img/res_vis_2.png';
 import tic_2 from '../img/tic_2.png';
@@ -84,9 +87,10 @@ class ProjectsComp extends Component {
                   because of the socket.io library which let both server and
                   client communicate with each other in real time. It also
                   look really nice because of use of Material UI.
-                </CardText>  <CardActions>
-                  <FlatButton label="Site" onClick={() => this._openLink('http://sample-env.twmququmnx.us-west-2.elasticbeanstalk.com/')} />
-                  <FlatButton label="Code" onClick={() => this._openLink('https://github.com/garybains/RealTimeTicTakToe/')} />
+                </CardText>
+                <CardActions>
+                  <RaisedButton primary label="Site" icon={<AvWeb />} onClick={() => this._openLink('http://sample-env.twmququmnx.us-west-2.elasticbeanstalk.com/')} />
+                  <RaisedButton label="Code" icon={<ActionCode />} onClick={() => this._openLink('https://github.com/garybains/RealTimeTicTakToe/')} />
                 </CardActions>
               </Card>
           </Paper>
@@ -107,8 +111,8 @@ class ProjectsComp extends Component {
                   mesmerizing. It was my first serious endeavor into web development.
                 </CardText>
                 <CardActions>
-                  <FlatButton label="Site" onClick={() => this._openLink('https://s3.us-east-2.amazonaws.com/resviz/index.html')} />
-                  <FlatButton label="Code" onClick={() => this._openLink('https://github.com/garybains/result_viz')} />
+                  <RaisedButton primary label="Site" icon={<AvWeb />} onClick={() => this._openLink('https://s3.us-east-2.amazonaws.com/resviz/index.html')} />
+                  <RaisedButton label="Code" icon={<ActionCode />} onClick={() => this._openLink('https://github.com/garybains/result_viz')} />
                 </CardActions>
               </Card>
           </Paper>
@@ -135,7 +139,7 @@ class ProjectsComp extends Component {
                   stops using Bootstrap jQuery and Google Maps.
                 </CardText>
                 <CardActions>
-                  <FlatButton label="Site" onClick={() => this._openLink('http://buseeta.mcruiseon.com')} />
+                  <RaisedButton primary label="Site" icon={<AvWeb />} onClick={() => this._openLink('http://buseeta.mcruiseon.com')} />
                 </CardActions>
               </Card>
             </Paper>
@@ -154,7 +158,7 @@ class ProjectsComp extends Component {
                   at the front end and python/Django at the backend.
                 </CardText>
                 <CardActions>
-                  <FlatButton label="Site" onClick={() => this._openLink('http://staging.drive4wheels.com')} />
+                  <RaisedButton primary label="Site" icon={<AvWeb />} onClick={() => this._openLink('http://staging.drive4wheels.com')} />
                 </CardActions>
               </Card>
             </Paper>
@@ -177,8 +181,8 @@ class ProjectsComp extends Component {
                   quiz and students can attempt them.
                 </CardText>
                 <CardActions>
-                  <FlatButton label="Site" onClick={() => this._openLink('http://first-dev.us-west-2.elasticbeanstalk.com/')} />
-                  <FlatButton label="Code" onClick={() => this._openLink('https://github.com/garybains/Quiz/')} />
+                  <RaisedButton primary label="Site" icon={<AvWeb />} onClick={() => this._openLink('http://first-dev.us-west-2.elasticbeanstalk.com/')} />
+                  <RaisedButton label="Code" icon={<ActionCode />} onClick={() => this._openLink('https://github.com/garybains/Quiz/')} />
                 </CardActions>
               </Card>
             </Paper>

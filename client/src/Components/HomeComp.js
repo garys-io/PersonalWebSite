@@ -32,7 +32,7 @@ class HomeComp extends Component {
           <h1 style={styles.heading}>Hey there, I am Gurpreet Singh</h1>
           <p style={styles.text}>You could call me <strong>Gary</strong></p>
           <br />
-          <p style={styles.text}>I am a currently a Mobile Solutions Development student at Conestoga college. Seeking a coop opportunity this fall.</p>
+          <p style={styles.text}>I am a currently a Mobile Solutions Development student at Conestoga college. Seeking a coop opportunity this Spring term.</p>
           <p style={styles.text}>
             have extensive knowledge of working with HTML/CSS, JavaScript, Python, React, Django,
             JQuery, Google Maps, D3, Bootstrap, SQL, MongoDB, Java, C#.
