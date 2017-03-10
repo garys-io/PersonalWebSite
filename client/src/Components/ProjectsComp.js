@@ -88,7 +88,7 @@ class ProjectsComp extends Component {
                   client communicate with each other in real time. It also
                   look really nice because of use of Material UI.
                 </CardText>
-                <CardActions>
+                <CardActions style={styles.button}>
                   <RaisedButton primary label="Site" icon={<AvWeb />} onClick={() => this._openLink('http://sample-env.twmququmnx.us-west-2.elasticbeanstalk.com/')} />
                   <RaisedButton label="Code" icon={<ActionCode />} onClick={() => this._openLink('https://github.com/garybains/RealTimeTicTakToe/')} />
                 </CardActions>

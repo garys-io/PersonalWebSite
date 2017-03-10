@@ -1,0 +1,73 @@
+/* Default for */
+
+.avatar-img {
+    position: relative;
+    top: 20px;
+    border-radius: 100%;
+    width: 70px;
+};
+
+.heading {
+    text-align: center;
+    font-weight: 300;
+    margin: 20px 3%;
+};
+
+.center-con {
+    width: 100%;
+    margin: 0;
+}
+
+.text {
+    text-align: center;
+    line-height: 150%;
+};
+
+@media (min-width: 0px) and (max-width: 200px) {
+    .center-con {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .center-con {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    .center-con {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .center-con {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+    .center-con {
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .center-conntainer {
+        width: 40%;
+        margin: 0 30%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .center-conntainer {
+        width: 20%;
+        margin: 0 40%;
+    }
+}

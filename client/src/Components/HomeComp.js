@@ -1,49 +1,94 @@
 import React, { Component } from 'react';
-import Avatar from 'material-ui/Avatar';
+import {List, ListItem} from 'material-ui/List';
+import Divider from 'material-ui/Divider';
+import RaisedButton from 'material-ui/RaisedButton';
 
 import reduce from '../img/reduce.png';
-import './reduce.css';
+import me from '../img/me_cropped.png';
+import './HomeComp.css';
 
 
 class HomeComp extends Component {
 
+  _mail() {
+      window.location.href = "mailto:gsingh0370@conestogac.on.ca?Subject=Co%20op";
+  }
+
   render() {
 
     const styles = {
+      avatarImg: {
+        position: 'relative',
+        top: '20px',
+        borderRadius: '100%',
+        width: '70px',
+        paddingRight: '5px'
+      },
       heading: {
         textAlign: 'center',
-        fontWeight: '300',
-        margin: '20px 3% 0 3%'
+        fontWeight: '100',
+        color: '#777',
+        margin: '20px 3%'
       },
-      text: {
-        textAlign: 'center',
-        maxWidth: '500px',
-        margin: '10px 25%',
-        lineHeight: '150%'
+      bigText: {
+        fontSize: 'large'
       },
-      map: {
-        width: '50%',
-        margin: '10px 25%'
+      outerList: {
+        padding: '15px 0 0 20px',
+      },
+      innerList: {
+        padding: '15px 0 0 40px',
+        fontSize: '14px'
       }
     }
     
     return (
       <div>
-          <h1 style={styles.heading}>Hey there, I am Gurpreet Singh</h1>
-          <p style={styles.text}>You could call me <strong>Gary</strong></p>
+          <div>
+            <h1 style={styles.heading}><img src={me} style={styles.avatarImg}/> Gurpreet Singh | Gary</h1>
+          </div>
           <br />
-          <p style={styles.text}>I am a currently a Mobile Solutions Development student at Conestoga college. Seeking a coop opportunity this Spring term.</p>
-          <p style={styles.text}>
-            have extensive knowledge of working with HTML/CSS, JavaScript, Python, React, Django,
-            JQuery, Google Maps, D3, Bootstrap, SQL, MongoDB, Java, C#.
-            Along with these languages/libraries I have working knowledge of linux command line and
-            basic AWS services.
+          <p className="center-con text">
+            <span style={styles.bigText}>Hey, </span>
+              I am a currently a Mobile Solutions Development student at Conestoga college
           </p>
-          <img className="reduce-img" src={reduce} />
-          <p style={styles.text}>
-            <a href="mailto:gsingh0370@conestogac.on.ca?Subject=Co%20op" target="_top">email</a>
-          </p>
-          <img style={styles.map} src="https://maps.googleapis.com/maps/api/staticmap?center=43.4853742,-80.2&zoom=9&size=600x300&markers=color:blue|label:G|43.3852995,-80.4119173" />
+          <br />
+          <Divider />
+          <br />
+          <br />  
+          <p className="center-con text">I work with following technologies</p>
+          <div className="center-con">
+            <List>
+                <p style={styles.outerList} > Front </p>
+                  <ListItem style={styles.innerList} primaryText="HTML/CSS, Bootstrap, Material UI" disabled />
+                  <ListItem style={styles.innerList} primaryText="JavaScript, React, JQuery" disabled />
+                  <ListItem style={styles.innerList} primaryText="Google Maps, D3(Data Driven Documents)" disabled />
+                <br />
+                <p style={styles.outerList} > Back </p>
+                  <ListItem style={styles.innerList} primaryText="Python, Django" disabled />
+                  <ListItem style={styles.innerList} primaryText="JavaScript, Node, Express" disabled />
+                  <ListItem style={styles.innerList} primaryText="SQL, MongoDB" disabled />
+                  <ListItem style={styles.innerList} primaryText="Java, C#" disabled />
+                  <ListItem style={styles.innerList} primaryText="linux command line and basic AWS services" disabled />
+            </List>
+          </div>
+          <br />
+          <br />
+          <Divider />
+          <br />
+          <br />
+          <p className="center-con text">Below is example of what I write</p>
+          <br />
+          <br />  
+          <img className="center-con" src={reduce} />
+          <br />
+          <br />
+          <Divider />
+          <br />
+          <div className="center-con">
+            <RaisedButton onClick={this._mail} label="E-mail" primary fullWidth />
+          </div>
+          <br />
       </div>
     );
   }
