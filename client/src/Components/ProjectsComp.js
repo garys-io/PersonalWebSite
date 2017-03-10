@@ -34,12 +34,10 @@ class ProjectsComp extends Component {
           body = d.getElementsByTagName('body')[0],
           width = w.innerWidth || documentElement.clientWidth || body.clientWidth;
 
-    if (width < 1000) { 
-      this.setState({numCol: 1});
-    } else if (width > 1000 && width < 1600) { 
-      this.setState({numCol: 2});
-    } else if (width > 1600) { 
-      this.setState({numCol: 3});
+    if (width < 1000 ) {
+        this.setState({numCol: 1});
+    } else {
+        this.setState({numCol: 2});
     }
   }
 
