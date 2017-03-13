@@ -30,9 +30,6 @@ class HomeComp extends Component {
         color: '#777',
         margin: '20px 3%'
       },
-      bigText: {
-        fontSize: 'large'
-      },
       outerList: {
         padding: '15px 0 0 20px',
       },
@@ -49,8 +46,7 @@ class HomeComp extends Component {
           </div>
           <br />
           <p className="center-con text">
-            <span style={styles.bigText}>Hey, </span>
-              I am a currently a Mobile Solutions Development student at Conestoga college
+              I am currently a Mobile Solutions Development student at Conestoga college
           </p>
           <br />
           <Divider />
