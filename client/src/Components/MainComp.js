@@ -6,6 +6,7 @@ import ActionCode from 'material-ui/svg-icons/action/code';
 import DeviceDeveloperMode from 'material-ui/svg-icons/device/developer-mode';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Paper from 'material-ui/Paper';
+import {blue500, blue600, blue400} from 'material-ui/styles/colors';
 
 import HomeComp from './HomeComp';
 import ProjectsComp from './ProjectsComp';
@@ -31,8 +32,10 @@ class MainComp extends Component {
             margin: '20px 5%',
             display: 'inline-block',
         },
-        bigIcon: {
-            width: '100px'
+        projectTab: {
+            width: '50%',
+            height: '70px',
+            backgroundColor: blue600
         }
     };
 
@@ -45,7 +48,7 @@ class MainComp extends Component {
                 </Paper>
             </Tab>
 
-            <Tab label="Projects" icon={<DeviceDeveloperMode style={styles.bigIcon} />} >
+            <Tab label="Projects" style={styles.projectTab} icon={<DeviceDeveloperMode />} >
                 <Paper style={styles.paper} zDepth={1}>
                     <ProjectsComp />
                 </Paper>
