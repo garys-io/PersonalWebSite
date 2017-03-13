@@ -30,6 +30,9 @@ class MainComp extends Component {
             width: '90%',
             margin: '20px 5%',
             display: 'inline-block',
+        },
+        bigIcon: {
+            width: '100px'
         }
     };
 
@@ -42,7 +45,7 @@ class MainComp extends Component {
                 </Paper>
             </Tab>
 
-            <Tab label="Projects" icon={<DeviceDeveloperMode />} >
+            <Tab label="Projects" icon={<DeviceDeveloperMode style={styles.bigIcon} />} >
                 <Paper style={styles.paper} zDepth={1}>
                     <ProjectsComp />
                 </Paper>
