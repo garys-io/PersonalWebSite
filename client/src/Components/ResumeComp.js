@@ -120,8 +120,8 @@ class ResumeComp extends Component {
             <p>{d.city}</p>
             <p>{d.pinCode}</p>
             <p>{d.phone}</p>
-            <p>{d.email}</p>
-            <p>{d.website}</p>
+            <p><a href={"mailto: " + d.email + "?Subject=Co%20op"} target="_top">{d.email}</a></p>
+            <p><a href={d.website}>{d.website}</a></p>
         </div>
 
         <p style={styles.section.heading}>
