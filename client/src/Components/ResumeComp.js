@@ -31,7 +31,6 @@ class ResumeComp extends Component {
                 margin: '10px 0 0 0',
             },
             content: {
-                
             },
             contentItem: {
                 marginTop: '7px',

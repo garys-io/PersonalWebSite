@@ -58,16 +58,16 @@
     }
 }
 
-@media (min-width: 1400px) {
-    .center-conntainer {
+@media (min-width: 1400px) and (max-width: 2000px) {
+    .center-con {
         width: 40%;
         margin: 0 30%;
     }
 }
 
 @media (min-width: 2000px) {
-    .center-conntainer {
-        width: 20%;
-        margin: 0 40%;
+    .center-con {
+        width: 30%;
+        margin: 0 35%;
     }
 }

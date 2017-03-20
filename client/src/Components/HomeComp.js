@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {List, ListItem} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import RaisedButton from 'material-ui/RaisedButton';
+import FiberManualRecord from 'material-ui/svg-icons/av/fiber-manual-record';
 
 import reduce from '../img/reduce.png';
 import me from '../img/me_cropped.png';
@@ -46,26 +47,35 @@ class HomeComp extends Component {
           </div>
           <br />
           <p className="center-con text">
-              I am currently a Mobile Solutions Development student at Conestoga college
+              I am currently a Mobile Solutions Development student at Conestoga College <br/>
+              Seeking a Co-op position from May to August 2017 (4 months)
           </p>
           <br />
           <Divider />
           <br />
           <br />  
-          <p className="center-con text">I work with following technologies</p>
+          <p className="center-con text">I work with following</p>
           <div className="center-con">
             <List>
-                <p style={styles.outerList} > Front </p>
-                  <ListItem style={styles.innerList} primaryText="HTML/CSS, Bootstrap, Material UI" disabled />
-                  <ListItem style={styles.innerList} primaryText="JavaScript, React, JQuery" disabled />
-                  <ListItem style={styles.innerList} primaryText="Google Maps, D3(Data Driven Documents)" disabled />
+                <p style={styles.outerList} > Front End Technologies</p>
+                  <ListItem style={styles.innerList} primaryText="HTML/CSS, Bootstrap, Material UI"
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
+                  <ListItem style={styles.innerList} primaryText="JavaScript, React, JQuery"
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
+                  <ListItem style={styles.innerList} primaryText="Google Maps, D3(Data Driven Documents)" 
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
                 <br />
-                <p style={styles.outerList} > Back </p>
-                  <ListItem style={styles.innerList} primaryText="Python, Django" disabled />
-                  <ListItem style={styles.innerList} primaryText="JavaScript, Node, Express" disabled />
-                  <ListItem style={styles.innerList} primaryText="SQL, MongoDB" disabled />
-                  <ListItem style={styles.innerList} primaryText="Java, C#" disabled />
-                  <ListItem style={styles.innerList} primaryText="linux command line and basic AWS services" disabled />
+                <p style={styles.outerList} > Back End Technologies</p>
+                  <ListItem style={styles.innerList} primaryText="Python, Django" 
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
+                  <ListItem style={styles.innerList} primaryText="JavaScript, Node, Express" 
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
+                  <ListItem style={styles.innerList} primaryText="SQL, MongoDB" 
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
+                  <ListItem style={styles.innerList} primaryText="Java, C#" 
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
+                  <ListItem style={styles.innerList} primaryText="Linux command line and basic AWS services" 
+                    leftIcon={<FiberManualRecord style={{width:'13px'}} />} disabled />
             </List>
           </div>
           <br />
