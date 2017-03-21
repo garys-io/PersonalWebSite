@@ -4,7 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
 import ActionCode from 'material-ui/svg-icons/action/code';
 import AvWeb from 'material-ui/svg-icons/av/web'
-
+import Dialog from 'material-ui/Dialog';
 
 import res_vis_2 from '../img/res_vis_2.png';
 import tic_2 from '../img/tic_2.png';
@@ -18,9 +18,16 @@ class ProjectsComp extends Component {
   constructor() {
     super();
     this.state = {
-      numCol: 2
+      numCol: 2,
+      dialogOpen: false
     }
     this._handleWindowResize = this._handleWindowResize.bind(this);
+  }
+
+  _openDialog(project_name) {
+    if (project_name === 'tic') {
+      
+    }
   }
 
   _openLink(url) {
@@ -63,6 +70,17 @@ class ProjectsComp extends Component {
       row: {
           display: 'flex',
           flexWrap: 'wrap'
+      },
+      dialogContent: {
+          width: '95vw',
+          height: '95vh',
+          paddingTop: '2vh',
+          maxWidth: 'none',
+          transform: 'translate(0px, 0px)'
+      },
+      dialogImg: {
+          margin:'0 auto',
+          width:'100%'
       }
     }
 
@@ -185,6 +203,16 @@ class ProjectsComp extends Component {
               </Card>
             </Paper>
         </div>
+        <Dialog
+          //title="Dialog With Actions"
+          //actions={actions}
+          modal={false}
+          open={this.state.modelOpen}
+          contentStyle={styles.dialogContent}
+          //onRequestClose={this.handleClose}
+        >
+          <img style={styles.dialogImg} src={tic_2}/>
+        </Dialog>
       </div>
     );
   }
