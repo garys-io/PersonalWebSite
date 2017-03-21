@@ -19,14 +19,18 @@ class ProjectsComp extends Component {
     super();
     this.state = {
       numCol: 2,
-      dialogOpen: false
+      dialogOpen: false,
+      dialogImg: null
     }
     this._handleWindowResize = this._handleWindowResize.bind(this);
   }
 
   _openDialog(project_name) {
     if (project_name === 'tic') {
-      
+      this.setState({
+        dialogOpen: true,
+        dialogImg: tic_2
+      });
     }
   }
 
@@ -93,7 +97,7 @@ class ProjectsComp extends Component {
                 <CardMedia
                   overlay={<CardTitle title="Tic Tac Toe" />}
                 >
-                  <img src={tic_2}/>
+                  <img onClick={() => this._openDialog('tic')} src={tic_2}/>
                 </CardMedia>
                 <CardTitle title="Realtime Multiplayer Game"
                            subtitle="Socket.io, Material UI, React, Node/Express" />
@@ -207,11 +211,11 @@ class ProjectsComp extends Component {
           //title="Dialog With Actions"
           //actions={actions}
           modal={false}
-          open={this.state.modelOpen}
+          open={this.state.dialogOpen}
           contentStyle={styles.dialogContent}
           //onRequestClose={this.handleClose}
         >
-          <img style={styles.dialogImg} src={tic_2}/>
+          <img style={styles.dialogImg} src={this.state.dialogImg}/>
         </Dialog>
       </div>
     );
