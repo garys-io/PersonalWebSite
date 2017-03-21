@@ -43,7 +43,7 @@ class HomeComp extends Component {
     return (
       <div>
           <div>
-            <h1 style={styles.heading}><img src={me} style={styles.avatarImg}/> Gurpreet Singh | Gary</h1>
+            <h1 style={styles.heading}><img src={me} style={styles.avatarImg}/>Gurpreet “Gary” Singh</h1>
           </div>
           <br />
           <p className="center-con text">
