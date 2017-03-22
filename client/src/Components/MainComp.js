@@ -40,7 +40,7 @@ class MainComp extends Component {
     };
 
     return (
-        <Tabs>
+        <Tabs initialSelectedIndex={1}>
 
             <Tab label="HOME" icon={<ActionHome />} >
                 <Paper style={styles.paper} zDepth={1}>
