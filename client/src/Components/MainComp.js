@@ -35,6 +35,7 @@ class MainComp extends Component {
         projectTab: {
             width: '50%',
             height: '70px',
+            fontSize: '17px',
             backgroundColor: blue600
         }
     };

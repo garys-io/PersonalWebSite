@@ -27,6 +27,7 @@ class HomeComp extends Component {
       },
       heading: {
         textAlign: 'center',
+        fontSize: '40px',
         fontWeight: '100',
         color: '#777',
         margin: '20px 3%'
